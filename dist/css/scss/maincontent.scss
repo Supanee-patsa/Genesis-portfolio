@@ -1,0 +1,52 @@
+@use "variables";
+
+/* SERVICE SECTION */
+.service__container {
+  display: grid;
+  align-items: center;
+  max-width: 1110px;
+  width: 100%;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap:6vw;
+
+  & h2 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 38px; 
+  }
+
+  & li {
+    font-size: 18px; 
+  }
+}
+
+/* AWARDS SECTION */
+.awards__container {
+  max-width:1110px;
+  max-height: 832px;
+  display: flex;
+  align-items: start;
+  gap: 8rem;
+  margin-bottom: 2rem;
+
+
+  &-info {
+    max-width: 190px;
+    width: 100%;
+  }
+  & h2 {
+    flex: 1;
+  }
+
+  & p {
+   width: 50vwh;
+  }
+}
+
+.hr {
+  border-top: 1px solid $border-color;
+  margin: 2rem 0;
+}
+
+/* END OF AWARDS SECTION */

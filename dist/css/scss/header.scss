@@ -1,0 +1,47 @@
+@use "variables";
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__container-info {
+  max-width: 458px;
+  margin-top: 30px;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.42px; 
+  color: $links-color;
+}
+
+.header__box {
+  max-width: 1110px;
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &-title {
+    max-width: 635px;
+    min-height: 251px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0; 
+  
+
+    & span {
+    color: $links-color;
+    }
+  }
+}
+
+.header__box p::before {
+  content: "";
+  display: block;
+  width: 30px;
+  border: 1px solid $text-color;
+}
